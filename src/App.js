@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Headlines from './components/NewsHeadlines/Headlines'
+ 
+export default function App() {
+    return (
+        <div className="container-fluid my-5">
+            <h3 className="text-center mb-5">
+                React Working with Fetch API
+            </h3>
+            <Headlines/>
+        </div>
+    );
 }
 
-export default App;
